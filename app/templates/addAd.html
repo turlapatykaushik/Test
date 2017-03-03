@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Ad</title>
+  
+  
+  
+      <link rel="stylesheet" href="../static/css/loginstyle.css">
+
+  
+</head>
+
+<body>
+  <link href='http://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+<div id="content">
+    <h1>ADD NEW ADVERTISEMENT</h1>
+
+    <form action="http://localhost:5000/index2" method="post" autocomplete="on">
+        <p>
+            <label for="username" class="icon-user"> Name
+                <span class="required">*</span>
+            </label>
+            <input type="text" name="name" id="name" required="required" placeholder="Ad name" />
+        </p>
+		
+        <p>
+            <label >Vendor
+                <span class="required">*</span>
+            </label>
+            <input type="text" name="vendor" id="vendor" placeholder="enter the vendor name" required="required" />
+        </p>
+		<p>
+			Relevant Gender<span class="required">*</span>
+		 	<select name="gender">
+  			<option value="male">Male</option>
+  			<option value="female">Female</option>
+  			<option value="all">ALL</option>
+  			</select>
+		</p>
+		<p>
+			Relevant Personality<span class="required">*</span>
+		 	<select name="personality">
+  			<option value="self-transcedence"> High Self-Transcedence</option>
+  			<option value="self-enhancement"> Hifh Self-Enhancement</option>
+  			<option value="adventurousness">High adventurousness</option>
+			<option value="outgoing"> High Outgoing</option>
+			<option value="emotional"> High Emotional</option>
+			<option value="romantic"> High Romantic Quotient</option>
+			<option value="intellect"> High Intellect</option>
+			<option value="openness"> High openness quotient</option>Openness and low emotional range
+			<option value="low emotional"> High Openness and low emotional range</option>
+  			</select>
+		</p>
+        <p>
+            <label > Advertisement URL
+				<span class="required">*</span>
+			</label>
+            <input type=text name="url" id="url" placeholder="Enter the ad url" required="required"/>
+        </p>
+
+        
+        <p class="indication">Fields with
+            <span class="required"> * </span>are required</p>
+
+        <button type="submit">Add Ad</button>
+
+    </form>
+</div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="../static/css/loginstyle.css">
+
+  
+</head>
+
+<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+      <form action="http://localhost:5000/submitFeedback" method="post">
+      
+        <h1>Feedback</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name">Twitter id</label>
+          <input type="text" id="twitter_id" name="twitter_id" required="required">
+           </fieldset>
+	  <fieldset>
+          <legend><span class="number">2</span>Opinion</legend>
+          <label>How do you rate the ads displayed ?</label>
+	  <input type="radio" id="rating" value="1" name="rating"><label for="1" class="light">1</label>
+	  <input type="radio" id="rating" value="2" name="rating"><label for="2" class="light">2</label>
+	  <input type="radio" id="rating" value="3" name="rating"><label for="3" class="light">3</label>
+          <input type="radio" id="rating" value="4" name="rating"><label for="4" class="light">4</label>
+          <input type="radio" id="rating" value="5" name="rating" checked="checked"><label for="5" class="light">5</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">3</span>Comments</legend>
+          <label for="bio">Comments on Maintenance</label>
+          <textarea id="comments" name="comments"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+      
+    </body>
+</html>
+  
+  
+</body>
+</html>

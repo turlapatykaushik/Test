@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  
+  
+  
+      <link rel="stylesheet" href="../static/css/loginstyle.css">
+
+  
+</head>
+
+<body>
+  <link href='http://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+<div id="content">
+    <h1>ADD USER</h1>
+
+    <form action="http://localhost:5000/index1" method="post" autocomplete="on">
+        <p>
+            <label for="username" class="icon-user"> Name
+                <span class="required">*</span>
+            </label>
+            <input type="text" name="name" id="name" required="required" placeholder="user name" />
+        </p>
+		<input type="radio" name="gender" value="male" checked required="required"> Male <input type="radio" name="gender" value="female"> Female<br>
+        <p>
+            <label >Floor
+                <span class="required">*</span>
+            </label>
+            <input type="text" name="floor" id="floor" placeholder="enter user floor number" required="required" />
+        </p>
+		 <p>
+            <label > Email ID
+				<span class="required">*</span>
+			</label>
+            <input type="text" name="email_id" id="email_id" placeholder="Enter user email id" required="required" />
+        </p>
+        <p>
+            <label > Twitter Id
+				<span class="required">*</span>
+			</label>
+            <input type=text name="twitter_id" id="twitter_id" placeholder="Enter user social media handle" required="required"/>
+        </p>
+
+        <p>
+            <label > RFID Tag ID
+				<span class="required">*</span>
+			</label>
+            <input type="text" name="rfid_tag" id="rfid_tag" placeholder="Enter user unique RFID Tag number" required="required" />
+        </p>
+
+        <p>
+            <label> Phone Number
+                <span class="required">*</span>
+            </label>
+            <input type="text" name="ph_number" id="ph_number" placeholder="Enter user phone number" required="required" />
+        </p>
+        <p class="indication">Fields with
+            <span class="required"> * </span>are required</p>
+
+        <button type="submit">Add user</button>
+
+    </form>
+</div>
+  
+  
+</body>
+</html>
